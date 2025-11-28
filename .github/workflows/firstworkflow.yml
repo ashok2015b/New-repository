@@ -7,22 +7,20 @@ on :
 
 jobs:
    # First Job
-  Hello-job:
-     # runner - Github hosted
-     runs-on: ubuntu-latest
-     steps:
-       - name : Hello world
-         run : echo "Hello World"
-
-
+   Hello-job:
+       # runner - GitHub hosted
+       runs-on: ubuntu-latest
+       steps: 
+         - name : Hello world
+           run : echo "Hello World"
    # Second Job
-  echo-goodbye:
-     runs=on : ubuntu-slim
+   echo-goodbye:
+     runs-on : ubuntu-slim
      steps:
        - name : Say Goodbye
          run: echo "Goodbye!"
-        # Multiple comands
-      - name : Multiline bash
+   # Multiple commands
+       - name : Multiline bash
          run : |
           echo "I am"
           echo "multi-line"
